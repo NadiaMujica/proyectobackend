@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-
+/*
 export interface iTrack {
   id: number,
   title: string,
@@ -27,10 +27,11 @@ export const tracks: iTrack[] = [
     artist: "interprete 3"
   }
 ]
+*/
 
 @Injectable()
 export class AppService {
-  getTracks(): iTrack[] {
-    return tracks;
+  getTracks(): string {
+    return "hola";
   }
 }
