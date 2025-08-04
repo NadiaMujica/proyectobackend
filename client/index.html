@@ -1,12 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
 </head>
+
 <body>
-    <h1>Mensaje del backend:</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/productos.html">Productos</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <!-- GET -->
+        <button id="obtenerDatos">Consultar BD</button>
+        <div id="api"></div>
+
+        <h1>Mensaje del backend:</h1>
+        <ol id="lista-canciones" class="lista-canciones"></ol>
+        <div id="resultado"></div>
+        <br>
+        <!-- POST -->
+        <form id="form-cancion" class="formulario">
+            <label>
+                Titulo:
+                <input type="text" id="titulo" required />
+            </label>
+            <label>
+                Duracion (en segundos)
+                <input type="number" id="duracion" required />
+            </label>
+            <label>
+                Artista:
+                <input type="text" id="artista" required />
+            </label>
+            <button type="submit">Agregar cancion</button>
+        </form>
+    </section>
 </body>
+
 </html>
