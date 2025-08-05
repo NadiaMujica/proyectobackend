@@ -1,10 +1,10 @@
 {
   "tracks": [
     {
-      "id": 1,
       "title": "cancion 1",
-      "duration": 120,
-      "artist": "interprete 1"
+      "duration": 180,
+      "artist": "interprete 2",
+      "id": 1
     },
     {
       "id": 2,
@@ -21,8 +21,14 @@
     {
       "id": 4,
       "title": "cancion 4",
-      "duration": 240,
+      "duration": 180,
       "artist": "interprete 4"
+    },
+    {
+      "id": 5,
+      "title": "cancion 5",
+      "duration": 180,
+      "artist": "interprete 5"
     }
   ]
 }
