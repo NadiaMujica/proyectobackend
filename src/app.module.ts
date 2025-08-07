@@ -3,12 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
-import { TrackController } from './track/track.controller';
-import { TrackService } from './track/track.service';
+import { TrackModule } from './track/track.module';
 
 @Module({
-  imports: [ServeStaticModule.forRoot({ rootPath: join(__dirname, '..', 'client') })],
-  controllers: [AppController, TrackController],
-  providers: [AppService, TrackService],
+  imports: [ServeStaticModule.forRoot({ rootPath: join(__dirname, '..', 'client') }), TrackModule],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}

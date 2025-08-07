@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { Track } from './track.interface';
+import { TrackDto } from "./track.dto";
 
 const BASE_URL = 'http://localhost:3030/tracks/';
 
@@ -40,7 +41,7 @@ export class TrackService {
 
     }
 
-    async createTrack(track: Track): Promise<Track> {
+    async createTrack(track: TrackDto): Promise<Track> {
         const idn = await this.setId();
         //const newTrack = {id, ...track}
         const newTrack: Track = {
